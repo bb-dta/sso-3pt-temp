@@ -1,12 +1,131 @@
-<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" ID="_metadataReferenceUri" entityID="https://thirdparty.authentication.business.gov.au/saml20/entityid" cacheDuration="PT30M">
-<script/>
-<md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
-<md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
-<md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://staging.aps-career-pathfinder.digitalprofession.gov.au/saml20/authenticate"/>
-<saml:Attribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname" FriendlyName="givenName"/>
-<saml:Attribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname" FriendlyName="familyName"/>
-<saml:Attribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name" FriendlyName="name"/>
-<saml:Attribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress" FriendlyName="emailAddress"/>
-<saml:Attribute Name="http://vanguard.ebusiness.gov.au/2008/06/identity/claims/abn" FriendlyName="ABN"/>
-</md:IDPSSODescriptor>
-</md:EntityDescriptor>
+<EntityDescriptor 
+    ID="_00000000-0000-0000-0000-000000000004"
+    entityID="https://staging.aps-career-pathfinder.digitalprofession.gov.au/saml20/entityid"
+    validUntil="2024-08-14T00:00:00Z"
+    cacheDuration="PT30M"
+    xmlns="urn:oasis:names:tc:SAML:2.0:metadata"
+    xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion">
+
+    <SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+        <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://staging.aps-career-pathfinder.digitalprofession.gov.au/saml/acs" index="1" />
+        <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://staging.aps-career-pathfinder.digitalprofession.gov.au/saml/acs" index="2" />
+        <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://staging.aps-career-pathfinder.digitalprofession.gov.au/saml/acs" index="3" />
+
+        <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://staging.aps-career-pathfinder.digitalprofession.gov.au/saml/slo" />
+        <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://staging.aps-career-pathfinder.digitalprofession.gov.au/saml/slo" />
+
+        <ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://staging.aps-career-pathfinder.digitalprofession.gov.au/saml/ars" index="0" />
+
+        <KeyDescriptor use="signing">
+            <KeyInfo
+                xmlns="http://www.w3.org/2000/09/xmldsig#">
+                <X509Data>
+                    <X509Certificate>
+MIIHLTCCBZWgAwIBAgIQOAQrvbokMqiu1WoTsi3cUzANBgkqhkiG9w0BAQsFADCB
+wzELMAkGA1UEBhMCQVUxHjAcBgNVBAoTFUF1c3RyYWxpYW4gR292ZXJubWVudDEr
+MCkGA1UECxMiQXVzdHJhbGlhbiBBdXRoZW50aWNhdGlvbiBTZXJ2aWNlczEmMCQG
+A1UECxMdRm9yIERldmVsb3BtZW50IHB1cnBvc2VzIE9OTFkxPzA9BgNVBAMTNkF1
+c3RyYWxpYW4gR292ZXJubWVudCBBdXRoZW50aWNhdGlvbiBTZXJ2aWNlcyBPQ0Eg
+LSBHMjAeFw0yNDA3MjgwMDAwMDBaFw0yOTA3MjcyMzU5NTlaMIGOMRcwFQYDVQQD
+DA5EVEEgQ1AgRkFTIDNQVDEmMCQGA1UECwwdRk9SIERFVkVMT1BNRU5UIFBVUlBP
+U0VTIE9OTFkxFjAUBgNVBAsMDU1VTFRJLUFMTE9XRUQxJjAkBgNVBAoMHURpZ2l0
+YWwgVHJhbnNmb3JtYXRpb24gQWdlbmN5MQswCQYDVQQGEwJBVTCCASIwDQYJKoZI
+hvcNAQEBBQADggEPADCCAQoCggEBAJYPrdp8YtrZ45LsNtcmYp+4IUxLZrO1qejE
+zF2N8WrPKV7lmnisPPT78M5pGgMJyTRNaPLRkuUHYuxiqpLMKDVDv2VotTXpDugw
+dZpynhKsUKQBYCDCrvtZaqD1U2szHVGkQeZekvssVHTIaQeZuDqwrLOwyOEkOTLO
+YjdBm0pPV7Y3P4E4x7TUCzIkfkmgjB2WcKywCiTifpS1XEOSFenGHNcgRJIPbqEF
+MF6KQlQ79XwyDqgviEgknztgtAARQG5CYXG0vuWKLreX4LVIF0/d30jiDAHHNQHC
+uZkBJ3C9H45wvTtAVPjQtWUmyJ8qhs0xjWAzukHCesVUwWCsn60CAwEAAaOCAs4w
+ggLKMAwGA1UdEwEB/wQCMAAwDgYDVR0PAQH/BAQDAgPoMBYGA1UdJQEB/wQMMAoG
+CCsGAQUFBwMCMB0GA1UdDgQWBBTgHlwrpr+TdfA+M5R6hLgBrxMdbzCCATUGA1Ud
+IASCASwwggEoMIIBJAYIKiQBh2koCAEwggEWMD4GCCsGAQUFBwIBFjJodHRwczov
+L3Zhbmd1YXJkLmJ1c2luZXNzLmdvdi5hdS9DZXJ0aWZpY2F0ZVBvbGljeTCB0wYI
+KwYBBQUHAgIwgcYMgcNUaGlzIGNlcnRpZmljYXRlIGlzIGZvciB0ZXN0IHB1cnBv
+c2VzIG9ubHkuIE5vIHJlbGlhbmNlIG9mIGFueSBraW5kIGlzIHBlcm1pdHRlZC4g
+VGhpcyBjZXJ0aWZpY2F0ZSBpcyBub3QgcHJvb2Ygb2Ygb3JpZ2luIGFuZCBjYW5u
+b3QgYmUgdXNlZCB0byBiaW5kIFZBTmd1YXJkLCBESUlTLCBvciBhbnkgb3RoZXIg
+cGFydHkgaW4gYW55IHdheS4wXQYDVR0fBFYwVDBSoFCgToZMaHR0cDovL3BraS1j
+cmwuc3ltYXV0aC5jb20vY2FfODJiYmQ0NjUyOGFhZDU4ZTdiNmY3ODQwMWFmYzQ2
+MmIvTGF0ZXN0Q1JMLmNybDA3BggrBgEFBQcBAQQrMCkwJwYIKwYBBQUHMAGGG2h0
+dHA6Ly9wa2ktb2NzcC5zeW1hdXRoLmNvbTAfBgNVHSMEGDAWgBQJX+qbf0QowBQA
+zrNp/3XmKl88wzAXBgYqJAGCTQEEDRYLOTYyNTc5NzkxNTkwLQYKYIZIAYb4RQEQ
+AwQfMB0GE2CGSAGG+EUBEAEEGQEDgq7k23oWBjY5MDg0NTA5BgpghkgBhvhFARAF
+BCswKQIBABYkYUhSMGNITTZMeTl3YTJrdGNtRXVjM2x0WVhWMGFDNWpiMjA9MA0G
+CSqGSIb3DQEBCwUAA4IBgQCN9digGuygWkDV23MGZfWSq9F5CIpVjYct7Xc+AdDd
+c4t/CSJ9aptnovp2fpSwFpOkygJpnIWiQFF9OK2blShbVdWkIVjfhsZBD/J0eDrg
+OXEV/nkURWGhQh9bWDSl4oWZ9+iCR8dPEuv6ambwesoh3o7dh01kgL973yZR4oUs
+mpr01i3oRiXERH7njf2gH/iWlVmH601il6Hl3BDJhf6O2lwItTlLfmTWL8inchhp
+CijX9afV0Q85mNM/Z/SURBZvIdfAc0Iln7oqXfuuye9Vaz0Z4A2pz7WgoTo+Rvai
+NvP/PrzWkwAHCl0TxEtlGz+1Vo0lBnRXqOwg1DBmTnTuyoOhKBVvG43FLZRr83uv
+sIK/+i7TLRD+1IbQ3Z9lP0gomN9viLot3wqrKAThwfqMwlHko/QN4UBDlQmrj6wR
+dELfVvU6QPgwurgH3iYd+YGIsizpLpbY7IKFL7nnh0v5AX1202DbYGWWZeF6o1Yl
+CUomQ+WG8fp8lx/MaQQyO4I=
+</X509Certificate>
+                </X509Data>
+            </KeyInfo>
+        </KeyDescriptor>
+
+        <KeyDescriptor use="encryption">
+            <KeyInfo
+                xmlns="http://www.w3.org/2000/09/xmldsig#">
+                <X509Data>
+                    <X509Certificate>
+MIIHLTCCBZWgAwIBAgIQOAQrvbokMqiu1WoTsi3cUzANBgkqhkiG9w0BAQsFADCB
+wzELMAkGA1UEBhMCQVUxHjAcBgNVBAoTFUF1c3RyYWxpYW4gR292ZXJubWVudDEr
+MCkGA1UECxMiQXVzdHJhbGlhbiBBdXRoZW50aWNhdGlvbiBTZXJ2aWNlczEmMCQG
+A1UECxMdRm9yIERldmVsb3BtZW50IHB1cnBvc2VzIE9OTFkxPzA9BgNVBAMTNkF1
+c3RyYWxpYW4gR292ZXJubWVudCBBdXRoZW50aWNhdGlvbiBTZXJ2aWNlcyBPQ0Eg
+LSBHMjAeFw0yNDA3MjgwMDAwMDBaFw0yOTA3MjcyMzU5NTlaMIGOMRcwFQYDVQQD
+DA5EVEEgQ1AgRkFTIDNQVDEmMCQGA1UECwwdRk9SIERFVkVMT1BNRU5UIFBVUlBP
+U0VTIE9OTFkxFjAUBgNVBAsMDU1VTFRJLUFMTE9XRUQxJjAkBgNVBAoMHURpZ2l0
+YWwgVHJhbnNmb3JtYXRpb24gQWdlbmN5MQswCQYDVQQGEwJBVTCCASIwDQYJKoZI
+hvcNAQEBBQADggEPADCCAQoCggEBAJYPrdp8YtrZ45LsNtcmYp+4IUxLZrO1qejE
+zF2N8WrPKV7lmnisPPT78M5pGgMJyTRNaPLRkuUHYuxiqpLMKDVDv2VotTXpDugw
+dZpynhKsUKQBYCDCrvtZaqD1U2szHVGkQeZekvssVHTIaQeZuDqwrLOwyOEkOTLO
+YjdBm0pPV7Y3P4E4x7TUCzIkfkmgjB2WcKywCiTifpS1XEOSFenGHNcgRJIPbqEF
+MF6KQlQ79XwyDqgviEgknztgtAARQG5CYXG0vuWKLreX4LVIF0/d30jiDAHHNQHC
+uZkBJ3C9H45wvTtAVPjQtWUmyJ8qhs0xjWAzukHCesVUwWCsn60CAwEAAaOCAs4w
+ggLKMAwGA1UdEwEB/wQCMAAwDgYDVR0PAQH/BAQDAgPoMBYGA1UdJQEB/wQMMAoG
+CCsGAQUFBwMCMB0GA1UdDgQWBBTgHlwrpr+TdfA+M5R6hLgBrxMdbzCCATUGA1Ud
+IASCASwwggEoMIIBJAYIKiQBh2koCAEwggEWMD4GCCsGAQUFBwIBFjJodHRwczov
+L3Zhbmd1YXJkLmJ1c2luZXNzLmdvdi5hdS9DZXJ0aWZpY2F0ZVBvbGljeTCB0wYI
+KwYBBQUHAgIwgcYMgcNUaGlzIGNlcnRpZmljYXRlIGlzIGZvciB0ZXN0IHB1cnBv
+c2VzIG9ubHkuIE5vIHJlbGlhbmNlIG9mIGFueSBraW5kIGlzIHBlcm1pdHRlZC4g
+VGhpcyBjZXJ0aWZpY2F0ZSBpcyBub3QgcHJvb2Ygb2Ygb3JpZ2luIGFuZCBjYW5u
+b3QgYmUgdXNlZCB0byBiaW5kIFZBTmd1YXJkLCBESUlTLCBvciBhbnkgb3RoZXIg
+cGFydHkgaW4gYW55IHdheS4wXQYDVR0fBFYwVDBSoFCgToZMaHR0cDovL3BraS1j
+cmwuc3ltYXV0aC5jb20vY2FfODJiYmQ0NjUyOGFhZDU4ZTdiNmY3ODQwMWFmYzQ2
+MmIvTGF0ZXN0Q1JMLmNybDA3BggrBgEFBQcBAQQrMCkwJwYIKwYBBQUHMAGGG2h0
+dHA6Ly9wa2ktb2NzcC5zeW1hdXRoLmNvbTAfBgNVHSMEGDAWgBQJX+qbf0QowBQA
+zrNp/3XmKl88wzAXBgYqJAGCTQEEDRYLOTYyNTc5NzkxNTkwLQYKYIZIAYb4RQEQ
+AwQfMB0GE2CGSAGG+EUBEAEEGQEDgq7k23oWBjY5MDg0NTA5BgpghkgBhvhFARAF
+BCswKQIBABYkYUhSMGNITTZMeTl3YTJrdGNtRXVjM2x0WVhWMGFDNWpiMjA9MA0G
+CSqGSIb3DQEBCwUAA4IBgQCN9digGuygWkDV23MGZfWSq9F5CIpVjYct7Xc+AdDd
+c4t/CSJ9aptnovp2fpSwFpOkygJpnIWiQFF9OK2blShbVdWkIVjfhsZBD/J0eDrg
+OXEV/nkURWGhQh9bWDSl4oWZ9+iCR8dPEuv6ambwesoh3o7dh01kgL973yZR4oUs
+mpr01i3oRiXERH7njf2gH/iWlVmH601il6Hl3BDJhf6O2lwItTlLfmTWL8inchhp
+CijX9afV0Q85mNM/Z/SURBZvIdfAc0Iln7oqXfuuye9Vaz0Z4A2pz7WgoTo+Rvai
+NvP/PrzWkwAHCl0TxEtlGz+1Vo0lBnRXqOwg1DBmTnTuyoOhKBVvG43FLZRr83uv
+sIK/+i7TLRD+1IbQ3Z9lP0gomN9viLot3wqrKAThwfqMwlHko/QN4UBDlQmrj6wR
+dELfVvU6QPgwurgH3iYd+YGIsizpLpbY7IKFL7nnh0v5AX1202DbYGWWZeF6o1Yl
+CUomQ+WG8fp8lx/MaQQyO4I=
+</X509Certificate>
+                </X509Data>
+            </KeyInfo>
+        </KeyDescriptor>
+    </SPSSODescriptor>
+
+    <Organization>
+        <OrganizationName xml:lang="en-GB">DTA</OrganizationName>
+        <OrganizationDisplayName xml:lang="en-GB">DTA</OrganizationDisplayName>
+        <OrganizationURL xml:lang="en-GB">https://dta.gov.au/</OrganizationURL>
+    </Organization>
+
+    <ContactPerson contactType="technical">
+        <Company>DTA</Company>
+        <GivenName>B</GivenName>
+        <SurName>B</SurName>
+        <EmailAddress>digitalchannels@dta.gov.au</EmailAddress>
+    </ContactPerson>
+
+</EntityDescriptor>

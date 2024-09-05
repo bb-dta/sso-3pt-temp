@@ -1,7 +1,7 @@
 <EntityDescriptor 
     ID="_00000000-0000-0000-0000-000000000004"
     entityID="https://staging.aps-career-pathfinder.digitalprofession.gov.au/saml20/entityid"
-    validUntil="2024-08-14T00:00:00Z"
+    validUntil="2025-08-14T00:00:00Z"
     cacheDuration="PT30M"
     xmlns="urn:oasis:names:tc:SAML:2.0:metadata"
     xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion">

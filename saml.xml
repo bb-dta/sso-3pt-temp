@@ -1,4 +1,4 @@
-<EntityDescriptor 
+<EntityDescriptor
     ID="_00000000-0000-0000-0000-000000000004"
     entityID="https://staging.aps-career-pathfinder.digitalprofession.gov.au/saml20/entityid"
     validUntil="2025-08-14T00:00:00Z"
@@ -6,113 +6,31 @@
     xmlns="urn:oasis:names:tc:SAML:2.0:metadata"
     xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion">
 
-    <SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
-        <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://staging.aps-career-pathfinder.digitalprofession.gov.au/saml/acs" index="1" />
-        <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://staging.aps-career-pathfinder.digitalprofession.gov.au/saml/acs" index="2" />
-        <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://staging.aps-career-pathfinder.digitalprofession.gov.au/saml/acs" index="3" />
-
-        <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://staging.aps-career-pathfinder.digitalprofession.gov.au/saml/slo" />
-        <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://staging.aps-career-pathfinder.digitalprofession.gov.au/saml/slo" />
-
-        <ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://staging.aps-career-pathfinder.digitalprofession.gov.au/saml/ars" index="0" />
-
+    <SPSSODescriptor AuthnRequestsSigned="true" WantAssertionsSigned="true"
+        protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
         <KeyDescriptor use="signing">
-            <KeyInfo
-                xmlns="http://www.w3.org/2000/09/xmldsig#">
-                <X509Data>
-                    <X509Certificate>
-MIIHLTCCBZWgAwIBAgIQOAQrvbokMqiu1WoTsi3cUzANBgkqhkiG9w0BAQsFADCB
-wzELMAkGA1UEBhMCQVUxHjAcBgNVBAoTFUF1c3RyYWxpYW4gR292ZXJubWVudDEr
-MCkGA1UECxMiQXVzdHJhbGlhbiBBdXRoZW50aWNhdGlvbiBTZXJ2aWNlczEmMCQG
-A1UECxMdRm9yIERldmVsb3BtZW50IHB1cnBvc2VzIE9OTFkxPzA9BgNVBAMTNkF1
-c3RyYWxpYW4gR292ZXJubWVudCBBdXRoZW50aWNhdGlvbiBTZXJ2aWNlcyBPQ0Eg
-LSBHMjAeFw0yNDA3MjgwMDAwMDBaFw0yOTA3MjcyMzU5NTlaMIGOMRcwFQYDVQQD
-DA5EVEEgQ1AgRkFTIDNQVDEmMCQGA1UECwwdRk9SIERFVkVMT1BNRU5UIFBVUlBP
-U0VTIE9OTFkxFjAUBgNVBAsMDU1VTFRJLUFMTE9XRUQxJjAkBgNVBAoMHURpZ2l0
-YWwgVHJhbnNmb3JtYXRpb24gQWdlbmN5MQswCQYDVQQGEwJBVTCCASIwDQYJKoZI
-hvcNAQEBBQADggEPADCCAQoCggEBAJYPrdp8YtrZ45LsNtcmYp+4IUxLZrO1qejE
-zF2N8WrPKV7lmnisPPT78M5pGgMJyTRNaPLRkuUHYuxiqpLMKDVDv2VotTXpDugw
-dZpynhKsUKQBYCDCrvtZaqD1U2szHVGkQeZekvssVHTIaQeZuDqwrLOwyOEkOTLO
-YjdBm0pPV7Y3P4E4x7TUCzIkfkmgjB2WcKywCiTifpS1XEOSFenGHNcgRJIPbqEF
-MF6KQlQ79XwyDqgviEgknztgtAARQG5CYXG0vuWKLreX4LVIF0/d30jiDAHHNQHC
-uZkBJ3C9H45wvTtAVPjQtWUmyJ8qhs0xjWAzukHCesVUwWCsn60CAwEAAaOCAs4w
-ggLKMAwGA1UdEwEB/wQCMAAwDgYDVR0PAQH/BAQDAgPoMBYGA1UdJQEB/wQMMAoG
-CCsGAQUFBwMCMB0GA1UdDgQWBBTgHlwrpr+TdfA+M5R6hLgBrxMdbzCCATUGA1Ud
-IASCASwwggEoMIIBJAYIKiQBh2koCAEwggEWMD4GCCsGAQUFBwIBFjJodHRwczov
-L3Zhbmd1YXJkLmJ1c2luZXNzLmdvdi5hdS9DZXJ0aWZpY2F0ZVBvbGljeTCB0wYI
-KwYBBQUHAgIwgcYMgcNUaGlzIGNlcnRpZmljYXRlIGlzIGZvciB0ZXN0IHB1cnBv
-c2VzIG9ubHkuIE5vIHJlbGlhbmNlIG9mIGFueSBraW5kIGlzIHBlcm1pdHRlZC4g
-VGhpcyBjZXJ0aWZpY2F0ZSBpcyBub3QgcHJvb2Ygb2Ygb3JpZ2luIGFuZCBjYW5u
-b3QgYmUgdXNlZCB0byBiaW5kIFZBTmd1YXJkLCBESUlTLCBvciBhbnkgb3RoZXIg
-cGFydHkgaW4gYW55IHdheS4wXQYDVR0fBFYwVDBSoFCgToZMaHR0cDovL3BraS1j
-cmwuc3ltYXV0aC5jb20vY2FfODJiYmQ0NjUyOGFhZDU4ZTdiNmY3ODQwMWFmYzQ2
-MmIvTGF0ZXN0Q1JMLmNybDA3BggrBgEFBQcBAQQrMCkwJwYIKwYBBQUHMAGGG2h0
-dHA6Ly9wa2ktb2NzcC5zeW1hdXRoLmNvbTAfBgNVHSMEGDAWgBQJX+qbf0QowBQA
-zrNp/3XmKl88wzAXBgYqJAGCTQEEDRYLOTYyNTc5NzkxNTkwLQYKYIZIAYb4RQEQ
-AwQfMB0GE2CGSAGG+EUBEAEEGQEDgq7k23oWBjY5MDg0NTA5BgpghkgBhvhFARAF
-BCswKQIBABYkYUhSMGNITTZMeTl3YTJrdGNtRXVjM2x0WVhWMGFDNWpiMjA9MA0G
-CSqGSIb3DQEBCwUAA4IBgQCN9digGuygWkDV23MGZfWSq9F5CIpVjYct7Xc+AdDd
-c4t/CSJ9aptnovp2fpSwFpOkygJpnIWiQFF9OK2blShbVdWkIVjfhsZBD/J0eDrg
-OXEV/nkURWGhQh9bWDSl4oWZ9+iCR8dPEuv6ambwesoh3o7dh01kgL973yZR4oUs
-mpr01i3oRiXERH7njf2gH/iWlVmH601il6Hl3BDJhf6O2lwItTlLfmTWL8inchhp
-CijX9afV0Q85mNM/Z/SURBZvIdfAc0Iln7oqXfuuye9Vaz0Z4A2pz7WgoTo+Rvai
-NvP/PrzWkwAHCl0TxEtlGz+1Vo0lBnRXqOwg1DBmTnTuyoOhKBVvG43FLZRr83uv
-sIK/+i7TLRD+1IbQ3Z9lP0gomN9viLot3wqrKAThwfqMwlHko/QN4UBDlQmrj6wR
-dELfVvU6QPgwurgH3iYd+YGIsizpLpbY7IKFL7nnh0v5AX1202DbYGWWZeF6o1Yl
-CUomQ+WG8fp8lx/MaQQyO4I=
-</X509Certificate>
-                </X509Data>
-            </KeyInfo>
+            <ds:KeyInfo>
+                <ds:X509Data>
+                    <ds:X509Certificate>
+                        MIIFazCCA1OgAwIBAgIUNdj7YhtwhsMeLfUVAht4o/n+toowDQYJKoZIhvcNAQELBQAwRTELMAkGA1UEBhMCQVUxEzARBgNVBAgMClNvbWUtU3RhdGUxITAfBgNVBAoMGEludGVybmV0IFdpZGdpdHMgUHR5IEx0ZDAeFw0yNDEwMTgwNjA2MzlaFw0zNDEwMTYwNjA2MzlaMEUxCzAJBgNVBAYTAkFVMRMwEQYDVQQIDApTb21lLVN0YXRlMSEwHwYDVQQKDBhJbnRlcm5ldCBXaWRnaXRzIFB0eSBMdGQwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDAdhhfdKYn1PQrbJkF72L7tHpn+LEtLaPsnxFvm2hiXShvk8Wlvb5M/8U4fUCEsrhpU0aBy3a+vS/IiqniRnrVfx0SW9aQUurfohWCTSJ0mzc6sqGJE2eNUS/x/+olzEiu516DgPL78D2YXp6Fz7wSuTCsJ3Wwb2N912weavgZ73UFOs1vbCc8Vb3RbxrIBPVMezjkk7DA74y+wcg1qU5hy1xESmcbmLllfY9qPwdQuttXBtku2/1M9NlwjD0zhUnT5DDV9yeP1/cCpKz8Ck5Jib0Ag177K7/cxWkZd1V04D5wDe7RGo1Vs656z1hffGP6AvlTyMW9QGhjNH6xtS2DX27BZXX4uL8hjshUp7Y5rExV9QI7M4Gvl/WrerPwQLc/H1LkJU3ubtbyi7qtRiDdIlmV5+GQdGnjRSPWauFQMNgkIy62zpoLUtU8iZ7L76TCn87qoOxZcg0MgB/r1FBvHti0zyj013qBAANIrH1adnzJqT75qyhZ/3zq55vw/UYxJ25LUTKfOaC8K2cyLduvnaOIxQaOnWX//1IGafgHonJl8DUrEJYjoeEWq446unP4pxTSJ7ues6jsG1f+3can3BBaFbiowRQzxxQ/xFiGvtTmMzjaoRSa16gV8XO5h79/e4ZJ+dsoB7IQZRFGjD67+5KNPzsVridRbKi2Sx0kMQIDAQABo1MwUTAdBgNVHQ4EFgQUmrlpDLA0ONEpPfRp7/5YUWmEPxwwHwYDVR0jBBgwFoAUmrlpDLA0ONEpPfRp7/5YUWmEPxwwDwYDVR0TAQH/BAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAgEAIzvk7Q8n/SMAp1IKzSgMjsEgEKgvIrhXyTMruLUz81obBsN7sL7mKNSFT8DkH/pEtY0VZT06OGSJUNwJqhGeRnTJQfIp6NkStAw2acO6zJZyMopvNng7foXLLVnQOnUSD2YFjAuuJBtJi+N6MJNazZPJktdAAjaELaHpUyrRQOPpkTlYzSETki/cduK94VqlywxjmssEjXGrEUbUVbWF5EHcj0QDyoNWbmIxNKHzpIiSt84/eg0f+e6JdN9ipbTzGNKnFijze0DWAp9UTe1oA0yuZnCeI7AOt+xpcYIOb21pM6EnfYZvp7kCxpzHv7c6uA942zkSBagLpxWxpSxIL8+5sFxEvzcwtpDTvvW/d5nSo6rguZ2i7agDROjwzv+PZUFDDQd9YpEfIbpMfoB1fnGcrYPFfdt4mhRmSQPK8KEstPr+XDxpL4/Deg3tYY7YSr5Ud33L3ryJ0f3raNDHGRxy3t26OI64tdIx/m7UbyKiAkGRHfIsGwffhtIZCpyOwSOw3LabFR8ybtkVIfp0+eL6SdlfuvjhhRRONmMlZR1jcdr9gc1guHyfGe7v19HIdp4cAO093MFrD0kDNI0lp7RzoailSWvtWNsHWT6XE3Qgop6PMUkxHr/mF91Wc4MFcFa7zFCqLVj08EhhUY92OoOg/9pATG+Uq+c8SAQfisY=
+                    </ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
         </KeyDescriptor>
-
         <KeyDescriptor use="encryption">
-            <KeyInfo
-                xmlns="http://www.w3.org/2000/09/xmldsig#">
-                <X509Data>
-                    <X509Certificate>
-MIIHLTCCBZWgAwIBAgIQOAQrvbokMqiu1WoTsi3cUzANBgkqhkiG9w0BAQsFADCB
-wzELMAkGA1UEBhMCQVUxHjAcBgNVBAoTFUF1c3RyYWxpYW4gR292ZXJubWVudDEr
-MCkGA1UECxMiQXVzdHJhbGlhbiBBdXRoZW50aWNhdGlvbiBTZXJ2aWNlczEmMCQG
-A1UECxMdRm9yIERldmVsb3BtZW50IHB1cnBvc2VzIE9OTFkxPzA9BgNVBAMTNkF1
-c3RyYWxpYW4gR292ZXJubWVudCBBdXRoZW50aWNhdGlvbiBTZXJ2aWNlcyBPQ0Eg
-LSBHMjAeFw0yNDA3MjgwMDAwMDBaFw0yOTA3MjcyMzU5NTlaMIGOMRcwFQYDVQQD
-DA5EVEEgQ1AgRkFTIDNQVDEmMCQGA1UECwwdRk9SIERFVkVMT1BNRU5UIFBVUlBP
-U0VTIE9OTFkxFjAUBgNVBAsMDU1VTFRJLUFMTE9XRUQxJjAkBgNVBAoMHURpZ2l0
-YWwgVHJhbnNmb3JtYXRpb24gQWdlbmN5MQswCQYDVQQGEwJBVTCCASIwDQYJKoZI
-hvcNAQEBBQADggEPADCCAQoCggEBAJYPrdp8YtrZ45LsNtcmYp+4IUxLZrO1qejE
-zF2N8WrPKV7lmnisPPT78M5pGgMJyTRNaPLRkuUHYuxiqpLMKDVDv2VotTXpDugw
-dZpynhKsUKQBYCDCrvtZaqD1U2szHVGkQeZekvssVHTIaQeZuDqwrLOwyOEkOTLO
-YjdBm0pPV7Y3P4E4x7TUCzIkfkmgjB2WcKywCiTifpS1XEOSFenGHNcgRJIPbqEF
-MF6KQlQ79XwyDqgviEgknztgtAARQG5CYXG0vuWKLreX4LVIF0/d30jiDAHHNQHC
-uZkBJ3C9H45wvTtAVPjQtWUmyJ8qhs0xjWAzukHCesVUwWCsn60CAwEAAaOCAs4w
-ggLKMAwGA1UdEwEB/wQCMAAwDgYDVR0PAQH/BAQDAgPoMBYGA1UdJQEB/wQMMAoG
-CCsGAQUFBwMCMB0GA1UdDgQWBBTgHlwrpr+TdfA+M5R6hLgBrxMdbzCCATUGA1Ud
-IASCASwwggEoMIIBJAYIKiQBh2koCAEwggEWMD4GCCsGAQUFBwIBFjJodHRwczov
-L3Zhbmd1YXJkLmJ1c2luZXNzLmdvdi5hdS9DZXJ0aWZpY2F0ZVBvbGljeTCB0wYI
-KwYBBQUHAgIwgcYMgcNUaGlzIGNlcnRpZmljYXRlIGlzIGZvciB0ZXN0IHB1cnBv
-c2VzIG9ubHkuIE5vIHJlbGlhbmNlIG9mIGFueSBraW5kIGlzIHBlcm1pdHRlZC4g
-VGhpcyBjZXJ0aWZpY2F0ZSBpcyBub3QgcHJvb2Ygb2Ygb3JpZ2luIGFuZCBjYW5u
-b3QgYmUgdXNlZCB0byBiaW5kIFZBTmd1YXJkLCBESUlTLCBvciBhbnkgb3RoZXIg
-cGFydHkgaW4gYW55IHdheS4wXQYDVR0fBFYwVDBSoFCgToZMaHR0cDovL3BraS1j
-cmwuc3ltYXV0aC5jb20vY2FfODJiYmQ0NjUyOGFhZDU4ZTdiNmY3ODQwMWFmYzQ2
-MmIvTGF0ZXN0Q1JMLmNybDA3BggrBgEFBQcBAQQrMCkwJwYIKwYBBQUHMAGGG2h0
-dHA6Ly9wa2ktb2NzcC5zeW1hdXRoLmNvbTAfBgNVHSMEGDAWgBQJX+qbf0QowBQA
-zrNp/3XmKl88wzAXBgYqJAGCTQEEDRYLOTYyNTc5NzkxNTkwLQYKYIZIAYb4RQEQ
-AwQfMB0GE2CGSAGG+EUBEAEEGQEDgq7k23oWBjY5MDg0NTA5BgpghkgBhvhFARAF
-BCswKQIBABYkYUhSMGNITTZMeTl3YTJrdGNtRXVjM2x0WVhWMGFDNWpiMjA9MA0G
-CSqGSIb3DQEBCwUAA4IBgQCN9digGuygWkDV23MGZfWSq9F5CIpVjYct7Xc+AdDd
-c4t/CSJ9aptnovp2fpSwFpOkygJpnIWiQFF9OK2blShbVdWkIVjfhsZBD/J0eDrg
-OXEV/nkURWGhQh9bWDSl4oWZ9+iCR8dPEuv6ambwesoh3o7dh01kgL973yZR4oUs
-mpr01i3oRiXERH7njf2gH/iWlVmH601il6Hl3BDJhf6O2lwItTlLfmTWL8inchhp
-CijX9afV0Q85mNM/Z/SURBZvIdfAc0Iln7oqXfuuye9Vaz0Z4A2pz7WgoTo+Rvai
-NvP/PrzWkwAHCl0TxEtlGz+1Vo0lBnRXqOwg1DBmTnTuyoOhKBVvG43FLZRr83uv
-sIK/+i7TLRD+1IbQ3Z9lP0gomN9viLot3wqrKAThwfqMwlHko/QN4UBDlQmrj6wR
-dELfVvU6QPgwurgH3iYd+YGIsizpLpbY7IKFL7nnh0v5AX1202DbYGWWZeF6o1Yl
-CUomQ+WG8fp8lx/MaQQyO4I=
-</X509Certificate>
-                </X509Data>
-            </KeyInfo>
+            <ds:KeyInfo>
+                <ds:X509Data>
+                    <ds:X509Certificate>
+                        MIIFazCCA1OgAwIBAgIUNdj7YhtwhsMeLfUVAht4o/n+toowDQYJKoZIhvcNAQELBQAwRTELMAkGA1UEBhMCQVUxEzARBgNVBAgMClNvbWUtU3RhdGUxITAfBgNVBAoMGEludGVybmV0IFdpZGdpdHMgUHR5IEx0ZDAeFw0yNDEwMTgwNjA2MzlaFw0zNDEwMTYwNjA2MzlaMEUxCzAJBgNVBAYTAkFVMRMwEQYDVQQIDApTb21lLVN0YXRlMSEwHwYDVQQKDBhJbnRlcm5ldCBXaWRnaXRzIFB0eSBMdGQwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDAdhhfdKYn1PQrbJkF72L7tHpn+LEtLaPsnxFvm2hiXShvk8Wlvb5M/8U4fUCEsrhpU0aBy3a+vS/IiqniRnrVfx0SW9aQUurfohWCTSJ0mzc6sqGJE2eNUS/x/+olzEiu516DgPL78D2YXp6Fz7wSuTCsJ3Wwb2N912weavgZ73UFOs1vbCc8Vb3RbxrIBPVMezjkk7DA74y+wcg1qU5hy1xESmcbmLllfY9qPwdQuttXBtku2/1M9NlwjD0zhUnT5DDV9yeP1/cCpKz8Ck5Jib0Ag177K7/cxWkZd1V04D5wDe7RGo1Vs656z1hffGP6AvlTyMW9QGhjNH6xtS2DX27BZXX4uL8hjshUp7Y5rExV9QI7M4Gvl/WrerPwQLc/H1LkJU3ubtbyi7qtRiDdIlmV5+GQdGnjRSPWauFQMNgkIy62zpoLUtU8iZ7L76TCn87qoOxZcg0MgB/r1FBvHti0zyj013qBAANIrH1adnzJqT75qyhZ/3zq55vw/UYxJ25LUTKfOaC8K2cyLduvnaOIxQaOnWX//1IGafgHonJl8DUrEJYjoeEWq446unP4pxTSJ7ues6jsG1f+3can3BBaFbiowRQzxxQ/xFiGvtTmMzjaoRSa16gV8XO5h79/e4ZJ+dsoB7IQZRFGjD67+5KNPzsVridRbKi2Sx0kMQIDAQABo1MwUTAdBgNVHQ4EFgQUmrlpDLA0ONEpPfRp7/5YUWmEPxwwHwYDVR0jBBgwFoAUmrlpDLA0ONEpPfRp7/5YUWmEPxwwDwYDVR0TAQH/BAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAgEAIzvk7Q8n/SMAp1IKzSgMjsEgEKgvIrhXyTMruLUz81obBsN7sL7mKNSFT8DkH/pEtY0VZT06OGSJUNwJqhGeRnTJQfIp6NkStAw2acO6zJZyMopvNng7foXLLVnQOnUSD2YFjAuuJBtJi+N6MJNazZPJktdAAjaELaHpUyrRQOPpkTlYzSETki/cduK94VqlywxjmssEjXGrEUbUVbWF5EHcj0QDyoNWbmIxNKHzpIiSt84/eg0f+e6JdN9ipbTzGNKnFijze0DWAp9UTe1oA0yuZnCeI7AOt+xpcYIOb21pM6EnfYZvp7kCxpzHv7c6uA942zkSBagLpxWxpSxIL8+5sFxEvzcwtpDTvvW/d5nSo6rguZ2i7agDROjwzv+PZUFDDQd9YpEfIbpMfoB1fnGcrYPFfdt4mhRmSQPK8KEstPr+XDxpL4/Deg3tYY7YSr5Ud33L3ryJ0f3raNDHGRxy3t26OI64tdIx/m7UbyKiAkGRHfIsGwffhtIZCpyOwSOw3LabFR8ybtkVIfp0+eL6SdlfuvjhhRRONmMlZR1jcdr9gc1guHyfGe7v19HIdp4cAO093MFrD0kDNI0lp7RzoailSWvtWNsHWT6XE3Qgop6PMUkxHr/mF91Wc4MFcFa7zFCqLVj08EhhUY92OoOg/9pATG+Uq+c8SAQfisY=
+                    </ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
         </KeyDescriptor>
+        <NameIDFormat>
+            urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress
+        </NameIDFormat>
+        <AssertionConsumerService index="0" Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+            Location="https://3jfo2p2a6e6ystsc32pdsyyj2y0sxoev.lambda-url.ap-southeast-2.on.aws/" />
     </SPSSODescriptor>
 
     <Organization>

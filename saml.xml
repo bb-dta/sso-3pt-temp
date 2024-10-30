@@ -1,49 +1,47 @@
 <EntityDescriptor
-    ID="_00000000-0000-0000-0000-000000000005"
-    entityID="https://staging.aps-career-pathfinder.digitalprofession.gov.au/saml20/entityid"
-    validUntil="2024-11-10T00:00:00Z"
-    cacheDuration="PT30M"
-    xmlns="urn:oasis:names:tc:SAML:2.0:metadata"
-    xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion">
+  ID="_00000000-0000-0000-0000-000000000005"
+  entityID="https://staging.aps-career-pathfinder.digitalprofession.gov.au/saml20/entityid"
+  validUntil="2024-11-10T00:00:00Z"
+  cacheDuration="PT30M"
+  xmlns="urn:oasis:names:tc:SAML:2.0:metadata"
+  xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion">
+  <SPSSODescriptor AuthnRequestsSigned="true" WantAssertionsSigned="true"
+    protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+    <KeyDescriptor use="signing">
+      <KeyInfo>
+        <X509Data>
+          <X509Certificate>
+            MIIFazCCA1OgAwIBAgIUNdj7YhtwhsMeLfUVAht4o/n+toowDQYJKoZIhvcNAQELBQAwRTELMAkGA1UEBhMCQVUxEzARBgNVBAgMClNvbWUtU3RhdGUxITAfBgNVBAoMGEludGVybmV0IFdpZGdpdHMgUHR5IEx0ZDAeFw0yNDEwMTgwNjA2MzlaFw0zNDEwMTYwNjA2MzlaMEUxCzAJBgNVBAYTAkFVMRMwEQYDVQQIDApTb21lLVN0YXRlMSEwHwYDVQQKDBhJbnRlcm5ldCBXaWRnaXRzIFB0eSBMdGQwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDAdhhfdKYn1PQrbJkF72L7tHpn+LEtLaPsnxFvm2hiXShvk8Wlvb5M/8U4fUCEsrhpU0aBy3a+vS/IiqniRnrVfx0SW9aQUurfohWCTSJ0mzc6sqGJE2eNUS/x/+olzEiu516DgPL78D2YXp6Fz7wSuTCsJ3Wwb2N912weavgZ73UFOs1vbCc8Vb3RbxrIBPVMezjkk7DA74y+wcg1qU5hy1xESmcbmLllfY9qPwdQuttXBtku2/1M9NlwjD0zhUnT5DDV9yeP1/cCpKz8Ck5Jib0Ag177K7/cxWkZd1V04D5wDe7RGo1Vs656z1hffGP6AvlTyMW9QGhjNH6xtS2DX27BZXX4uL8hjshUp7Y5rExV9QI7M4Gvl/WrerPwQLc/H1LkJU3ubtbyi7qtRiDdIlmV5+GQdGnjRSPWauFQMNgkIy62zpoLUtU8iZ7L76TCn87qoOxZcg0MgB/r1FBvHti0zyj013qBAANIrH1adnzJqT75qyhZ/3zq55vw/UYxJ25LUTKfOaC8K2cyLduvnaOIxQaOnWX//1IGafgHonJl8DUrEJYjoeEWq446unP4pxTSJ7ues6jsG1f+3can3BBaFbiowRQzxxQ/xFiGvtTmMzjaoRSa16gV8XO5h79/e4ZJ+dsoB7IQZRFGjD67+5KNPzsVridRbKi2Sx0kMQIDAQABo1MwUTAdBgNVHQ4EFgQUmrlpDLA0ONEpPfRp7/5YUWmEPxwwHwYDVR0jBBgwFoAUmrlpDLA0ONEpPfRp7/5YUWmEPxwwDwYDVR0TAQH/BAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAgEAIzvk7Q8n/SMAp1IKzSgMjsEgEKgvIrhXyTMruLUz81obBsN7sL7mKNSFT8DkH/pEtY0VZT06OGSJUNwJqhGeRnTJQfIp6NkStAw2acO6zJZyMopvNng7foXLLVnQOnUSD2YFjAuuJBtJi+N6MJNazZPJktdAAjaELaHpUyrRQOPpkTlYzSETki/cduK94VqlywxjmssEjXGrEUbUVbWF5EHcj0QDyoNWbmIxNKHzpIiSt84/eg0f+e6JdN9ipbTzGNKnFijze0DWAp9UTe1oA0yuZnCeI7AOt+xpcYIOb21pM6EnfYZvp7kCxpzHv7c6uA942zkSBagLpxWxpSxIL8+5sFxEvzcwtpDTvvW/d5nSo6rguZ2i7agDROjwzv+PZUFDDQd9YpEfIbpMfoB1fnGcrYPFfdt4mhRmSQPK8KEstPr+XDxpL4/Deg3tYY7YSr5Ud33L3ryJ0f3raNDHGRxy3t26OI64tdIx/m7UbyKiAkGRHfIsGwffhtIZCpyOwSOw3LabFR8ybtkVIfp0+eL6SdlfuvjhhRRONmMlZR1jcdr9gc1guHyfGe7v19HIdp4cAO093MFrD0kDNI0lp7RzoailSWvtWNsHWT6XE3Qgop6PMUkxHr/mF91Wc4MFcFa7zFCqLVj08EhhUY92OoOg/9pATG+Uq+c8SAQfisY=
+          </X509Certificate>
+        </X509Data>
+      </KeyInfo>
+    </KeyDescriptor>
+    <KeyDescriptor use="encryption">
+      <KeyInfo>
+        <X509Data>
+          <X509Certificate>
+            MIIFazCCA1OgAwIBAgIUNdj7YhtwhsMeLfUVAht4o/n+toowDQYJKoZIhvcNAQELBQAwRTELMAkGA1UEBhMCQVUxEzARBgNVBAgMClNvbWUtU3RhdGUxITAfBgNVBAoMGEludGVybmV0IFdpZGdpdHMgUHR5IEx0ZDAeFw0yNDEwMTgwNjA2MzlaFw0zNDEwMTYwNjA2MzlaMEUxCzAJBgNVBAYTAkFVMRMwEQYDVQQIDApTb21lLVN0YXRlMSEwHwYDVQQKDBhJbnRlcm5ldCBXaWRnaXRzIFB0eSBMdGQwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDAdhhfdKYn1PQrbJkF72L7tHpn+LEtLaPsnxFvm2hiXShvk8Wlvb5M/8U4fUCEsrhpU0aBy3a+vS/IiqniRnrVfx0SW9aQUurfohWCTSJ0mzc6sqGJE2eNUS/x/+olzEiu516DgPL78D2YXp6Fz7wSuTCsJ3Wwb2N912weavgZ73UFOs1vbCc8Vb3RbxrIBPVMezjkk7DA74y+wcg1qU5hy1xESmcbmLllfY9qPwdQuttXBtku2/1M9NlwjD0zhUnT5DDV9yeP1/cCpKz8Ck5Jib0Ag177K7/cxWkZd1V04D5wDe7RGo1Vs656z1hffGP6AvlTyMW9QGhjNH6xtS2DX27BZXX4uL8hjshUp7Y5rExV9QI7M4Gvl/WrerPwQLc/H1LkJU3ubtbyi7qtRiDdIlmV5+GQdGnjRSPWauFQMNgkIy62zpoLUtU8iZ7L76TCn87qoOxZcg0MgB/r1FBvHti0zyj013qBAANIrH1adnzJqT75qyhZ/3zq55vw/UYxJ25LUTKfOaC8K2cyLduvnaOIxQaOnWX//1IGafgHonJl8DUrEJYjoeEWq446unP4pxTSJ7ues6jsG1f+3can3BBaFbiowRQzxxQ/xFiGvtTmMzjaoRSa16gV8XO5h79/e4ZJ+dsoB7IQZRFGjD67+5KNPzsVridRbKi2Sx0kMQIDAQABo1MwUTAdBgNVHQ4EFgQUmrlpDLA0ONEpPfRp7/5YUWmEPxwwHwYDVR0jBBgwFoAUmrlpDLA0ONEpPfRp7/5YUWmEPxwwDwYDVR0TAQH/BAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAgEAIzvk7Q8n/SMAp1IKzSgMjsEgEKgvIrhXyTMruLUz81obBsN7sL7mKNSFT8DkH/pEtY0VZT06OGSJUNwJqhGeRnTJQfIp6NkStAw2acO6zJZyMopvNng7foXLLVnQOnUSD2YFjAuuJBtJi+N6MJNazZPJktdAAjaELaHpUyrRQOPpkTlYzSETki/cduK94VqlywxjmssEjXGrEUbUVbWF5EHcj0QDyoNWbmIxNKHzpIiSt84/eg0f+e6JdN9ipbTzGNKnFijze0DWAp9UTe1oA0yuZnCeI7AOt+xpcYIOb21pM6EnfYZvp7kCxpzHv7c6uA942zkSBagLpxWxpSxIL8+5sFxEvzcwtpDTvvW/d5nSo6rguZ2i7agDROjwzv+PZUFDDQd9YpEfIbpMfoB1fnGcrYPFfdt4mhRmSQPK8KEstPr+XDxpL4/Deg3tYY7YSr5Ud33L3ryJ0f3raNDHGRxy3t26OI64tdIx/m7UbyKiAkGRHfIsGwffhtIZCpyOwSOw3LabFR8ybtkVIfp0+eL6SdlfuvjhhRRONmMlZR1jcdr9gc1guHyfGe7v19HIdp4cAO093MFrD0kDNI0lp7RzoailSWvtWNsHWT6XE3Qgop6PMUkxHr/mF91Wc4MFcFa7zFCqLVj08EhhUY92OoOg/9pATG+Uq+c8SAQfisY=
+          </X509Certificate>
+        </X509Data>
+      </KeyInfo>
+    </KeyDescriptor>
+    <NameIDFormat>
+      urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress
+    </NameIDFormat>
+    <AssertionConsumerService index="0" Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+      Location="https://3jfo2p2a6e6ystsc32pdsyyj2y0sxoev.lambda-url.ap-southeast-2.on.aws/" />
+  </SPSSODescriptor>
+  <Organization>
+    <OrganizationName xml:lang="en-GB">DTA</OrganizationName>
+    <OrganizationDisplayName xml:lang="en-GB">DTA</OrganizationDisplayName>
+    <OrganizationURL xml:lang="en-GB">https://dta.gov.au/</OrganizationURL>
+  </Organization>
 
-    <SPSSODescriptor AuthnRequestsSigned="true" WantAssertionsSigned="true"
-        protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
-        <KeyDescriptor use="signing">
-            <ds:KeyInfo>
-                <ds:X509Data>
-                    <ds:X509Certificate>
-                        MIIFazCCA1OgAwIBAgIUNdj7YhtwhsMeLfUVAht4o/n+toowDQYJKoZIhvcNAQELBQAwRTELMAkGA1UEBhMCQVUxEzARBgNVBAgMClNvbWUtU3RhdGUxITAfBgNVBAoMGEludGVybmV0IFdpZGdpdHMgUHR5IEx0ZDAeFw0yNDEwMTgwNjA2MzlaFw0zNDEwMTYwNjA2MzlaMEUxCzAJBgNVBAYTAkFVMRMwEQYDVQQIDApTb21lLVN0YXRlMSEwHwYDVQQKDBhJbnRlcm5ldCBXaWRnaXRzIFB0eSBMdGQwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDAdhhfdKYn1PQrbJkF72L7tHpn+LEtLaPsnxFvm2hiXShvk8Wlvb5M/8U4fUCEsrhpU0aBy3a+vS/IiqniRnrVfx0SW9aQUurfohWCTSJ0mzc6sqGJE2eNUS/x/+olzEiu516DgPL78D2YXp6Fz7wSuTCsJ3Wwb2N912weavgZ73UFOs1vbCc8Vb3RbxrIBPVMezjkk7DA74y+wcg1qU5hy1xESmcbmLllfY9qPwdQuttXBtku2/1M9NlwjD0zhUnT5DDV9yeP1/cCpKz8Ck5Jib0Ag177K7/cxWkZd1V04D5wDe7RGo1Vs656z1hffGP6AvlTyMW9QGhjNH6xtS2DX27BZXX4uL8hjshUp7Y5rExV9QI7M4Gvl/WrerPwQLc/H1LkJU3ubtbyi7qtRiDdIlmV5+GQdGnjRSPWauFQMNgkIy62zpoLUtU8iZ7L76TCn87qoOxZcg0MgB/r1FBvHti0zyj013qBAANIrH1adnzJqT75qyhZ/3zq55vw/UYxJ25LUTKfOaC8K2cyLduvnaOIxQaOnWX//1IGafgHonJl8DUrEJYjoeEWq446unP4pxTSJ7ues6jsG1f+3can3BBaFbiowRQzxxQ/xFiGvtTmMzjaoRSa16gV8XO5h79/e4ZJ+dsoB7IQZRFGjD67+5KNPzsVridRbKi2Sx0kMQIDAQABo1MwUTAdBgNVHQ4EFgQUmrlpDLA0ONEpPfRp7/5YUWmEPxwwHwYDVR0jBBgwFoAUmrlpDLA0ONEpPfRp7/5YUWmEPxwwDwYDVR0TAQH/BAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAgEAIzvk7Q8n/SMAp1IKzSgMjsEgEKgvIrhXyTMruLUz81obBsN7sL7mKNSFT8DkH/pEtY0VZT06OGSJUNwJqhGeRnTJQfIp6NkStAw2acO6zJZyMopvNng7foXLLVnQOnUSD2YFjAuuJBtJi+N6MJNazZPJktdAAjaELaHpUyrRQOPpkTlYzSETki/cduK94VqlywxjmssEjXGrEUbUVbWF5EHcj0QDyoNWbmIxNKHzpIiSt84/eg0f+e6JdN9ipbTzGNKnFijze0DWAp9UTe1oA0yuZnCeI7AOt+xpcYIOb21pM6EnfYZvp7kCxpzHv7c6uA942zkSBagLpxWxpSxIL8+5sFxEvzcwtpDTvvW/d5nSo6rguZ2i7agDROjwzv+PZUFDDQd9YpEfIbpMfoB1fnGcrYPFfdt4mhRmSQPK8KEstPr+XDxpL4/Deg3tYY7YSr5Ud33L3ryJ0f3raNDHGRxy3t26OI64tdIx/m7UbyKiAkGRHfIsGwffhtIZCpyOwSOw3LabFR8ybtkVIfp0+eL6SdlfuvjhhRRONmMlZR1jcdr9gc1guHyfGe7v19HIdp4cAO093MFrD0kDNI0lp7RzoailSWvtWNsHWT6XE3Qgop6PMUkxHr/mF91Wc4MFcFa7zFCqLVj08EhhUY92OoOg/9pATG+Uq+c8SAQfisY=
-                    </ds:X509Certificate>
-                </ds:X509Data>
-            </ds:KeyInfo>
-        </KeyDescriptor>
-        <KeyDescriptor use="encryption">
-            <ds:KeyInfo>
-                <ds:X509Data>
-                    <ds:X509Certificate>
-                        MIIFazCCA1OgAwIBAgIUNdj7YhtwhsMeLfUVAht4o/n+toowDQYJKoZIhvcNAQELBQAwRTELMAkGA1UEBhMCQVUxEzARBgNVBAgMClNvbWUtU3RhdGUxITAfBgNVBAoMGEludGVybmV0IFdpZGdpdHMgUHR5IEx0ZDAeFw0yNDEwMTgwNjA2MzlaFw0zNDEwMTYwNjA2MzlaMEUxCzAJBgNVBAYTAkFVMRMwEQYDVQQIDApTb21lLVN0YXRlMSEwHwYDVQQKDBhJbnRlcm5ldCBXaWRnaXRzIFB0eSBMdGQwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDAdhhfdKYn1PQrbJkF72L7tHpn+LEtLaPsnxFvm2hiXShvk8Wlvb5M/8U4fUCEsrhpU0aBy3a+vS/IiqniRnrVfx0SW9aQUurfohWCTSJ0mzc6sqGJE2eNUS/x/+olzEiu516DgPL78D2YXp6Fz7wSuTCsJ3Wwb2N912weavgZ73UFOs1vbCc8Vb3RbxrIBPVMezjkk7DA74y+wcg1qU5hy1xESmcbmLllfY9qPwdQuttXBtku2/1M9NlwjD0zhUnT5DDV9yeP1/cCpKz8Ck5Jib0Ag177K7/cxWkZd1V04D5wDe7RGo1Vs656z1hffGP6AvlTyMW9QGhjNH6xtS2DX27BZXX4uL8hjshUp7Y5rExV9QI7M4Gvl/WrerPwQLc/H1LkJU3ubtbyi7qtRiDdIlmV5+GQdGnjRSPWauFQMNgkIy62zpoLUtU8iZ7L76TCn87qoOxZcg0MgB/r1FBvHti0zyj013qBAANIrH1adnzJqT75qyhZ/3zq55vw/UYxJ25LUTKfOaC8K2cyLduvnaOIxQaOnWX//1IGafgHonJl8DUrEJYjoeEWq446unP4pxTSJ7ues6jsG1f+3can3BBaFbiowRQzxxQ/xFiGvtTmMzjaoRSa16gV8XO5h79/e4ZJ+dsoB7IQZRFGjD67+5KNPzsVridRbKi2Sx0kMQIDAQABo1MwUTAdBgNVHQ4EFgQUmrlpDLA0ONEpPfRp7/5YUWmEPxwwHwYDVR0jBBgwFoAUmrlpDLA0ONEpPfRp7/5YUWmEPxwwDwYDVR0TAQH/BAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAgEAIzvk7Q8n/SMAp1IKzSgMjsEgEKgvIrhXyTMruLUz81obBsN7sL7mKNSFT8DkH/pEtY0VZT06OGSJUNwJqhGeRnTJQfIp6NkStAw2acO6zJZyMopvNng7foXLLVnQOnUSD2YFjAuuJBtJi+N6MJNazZPJktdAAjaELaHpUyrRQOPpkTlYzSETki/cduK94VqlywxjmssEjXGrEUbUVbWF5EHcj0QDyoNWbmIxNKHzpIiSt84/eg0f+e6JdN9ipbTzGNKnFijze0DWAp9UTe1oA0yuZnCeI7AOt+xpcYIOb21pM6EnfYZvp7kCxpzHv7c6uA942zkSBagLpxWxpSxIL8+5sFxEvzcwtpDTvvW/d5nSo6rguZ2i7agDROjwzv+PZUFDDQd9YpEfIbpMfoB1fnGcrYPFfdt4mhRmSQPK8KEstPr+XDxpL4/Deg3tYY7YSr5Ud33L3ryJ0f3raNDHGRxy3t26OI64tdIx/m7UbyKiAkGRHfIsGwffhtIZCpyOwSOw3LabFR8ybtkVIfp0+eL6SdlfuvjhhRRONmMlZR1jcdr9gc1guHyfGe7v19HIdp4cAO093MFrD0kDNI0lp7RzoailSWvtWNsHWT6XE3Qgop6PMUkxHr/mF91Wc4MFcFa7zFCqLVj08EhhUY92OoOg/9pATG+Uq+c8SAQfisY=
-                    </ds:X509Certificate>
-                </ds:X509Data>
-            </ds:KeyInfo>
-        </KeyDescriptor>
-        <NameIDFormat>
-            urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress
-        </NameIDFormat>
-        <AssertionConsumerService index="0" Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
-            Location="https://3jfo2p2a6e6ystsc32pdsyyj2y0sxoev.lambda-url.ap-southeast-2.on.aws/" />
-    </SPSSODescriptor>
-
-    <Organization>
-        <OrganizationName xml:lang="en-GB">DTA</OrganizationName>
-        <OrganizationDisplayName xml:lang="en-GB">DTA</OrganizationDisplayName>
-        <OrganizationURL xml:lang="en-GB">https://dta.gov.au/</OrganizationURL>
-    </Organization>
-
-    <ContactPerson contactType="technical">
-        <Company>DTA</Company>
-        <GivenName>B</GivenName>
-        <SurName>B</SurName>
-        <EmailAddress>digitalchannels@dta.gov.au</EmailAddress>
-    </ContactPerson>
+  <ContactPerson contactType="technical">
+    <Company>DTA</Company>
+    <GivenName>B</GivenName>
+    <SurName>B</SurName>
+    <EmailAddress>digitalchannels@dta.gov.au</EmailAddress>
+  </ContactPerson>
 
 </EntityDescriptor>

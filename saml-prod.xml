@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" ID="pfxb0b1aff5-7b4e-1457-c441-81eb8e3f9988" cacheDuration="PT604800S" entityID="https://aps-career-pathfinder.digitalprofession.gov.au/saml20/entityid" validUntil="2024-11-20T02:27:33Z"><ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" ID="pfxb0b1aff5-7b4e-1457-c441-81eb8e3f9988" cacheDuration="PT604800S" entityID="https://aps-career-pathfinder.digitalprofession.gov.au/saml20/entityid" validUntil="2025-11-20T02:27:33Z"><ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
 <ds:SignedInfo>
 <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
 <ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
@@ -8,15 +8,15 @@
 <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
 </ds:Transforms>
 <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
-<ds:DigestValue>letW2iiYBQj71GEOdnrgiAQwjSNiDJuka6Y6Pi9FmKs=</ds:DigestValue>
+<ds:DigestValue>sKbV0NXRtUlTvtMnFxb9jcrDcMTULZKhdBeR//NDhj0=</ds:DigestValue>
 </ds:Reference>
 </ds:SignedInfo>
 <ds:SignatureValue>
-BOdX4GkgJATg5tchdsymSWrGV52RQG2QVhPus4XalirYelaiPuaDf9QO6jpKxT2ZPFD6tYOpCVDR
-Md9mXqmo/IPZnRKRLzgwLD7+4gLXMxaujwRLo1wFQbokHp9x47RDubcCMRwyItZ66Ahoj0WwVCx4
-lNBDgNFkj8BmDLMO/6YURTZWwLhSHHUKO20JRvT3bzIyBGxSVjs5OtTwUcLVtY164rburh7C/L4u
-uVRgHnqcOyc7pyq8iR51JbMcnnZZB3PcbAl7FLLYvDiAssHeL1/aQYm5OCB+eRrgiYkzXi4nNsHY
-XG/UFSBYN33N5t7C4aG66I4Po0HJwDGWL1B5lQ==
+TiW5EhhzbzY8HxCMgzhSBA4H7wH6GVqQyUCKjCdtpF7pYMv6R0MX4efcGV9FTux/AehBcw95Qjuq
+G0MKGF7u0HgIaHCSup2PDYFQbFJLFXl+fI6HRF71ewOMqENWBgns1tVJc2iKmWw6tXJDOBnMS8xq
+6vELTDxHEAZ8Id01H8HY/bbq/b4Xje2y56kpCh2Qq3qNj5Fjnf8//166xJn3+3643aQTAkQ+hOHb
+mURozG9vUNKS9+c/bfz05taAPryoAIDaocJd0W9Kk4EIzM/S8ExwgkyXjWGBzsN4V8ZfSUUJimbU
+dAFX5aT4vNNrLB2erYyLF1aYvFSlcanmuvJw3g==
 </ds:SignatureValue>
 <ds:KeyInfo>
 <ds:KeyValue>

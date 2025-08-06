@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" ID="pfxb0b1aff5-7b4e-1457-c441-81eb8e3f9988" cacheDuration="PT604800S" entityID="https://aps-career-pathfinder.digitalprofession.gov.au/saml20/entityid" validUntil="2025-11-20T02:27:33Z"><ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" ID="pfxb0b1aff5-7b4e-1457-c441-81eb8e3f9988" cacheDuration="PT604800S" entityID="https://aps-career-pathfinder.digitalprofession.gov.au/saml20/entityid" validUntil="2026-08-01T02:27:33Z"><ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
 <ds:SignedInfo>
 <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
 <ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
@@ -8,15 +8,15 @@
 <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
 </ds:Transforms>
 <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
-<ds:DigestValue>sKbV0NXRtUlTvtMnFxb9jcrDcMTULZKhdBeR//NDhj0=</ds:DigestValue>
+<ds:DigestValue>nZsHqOAcmP9VY3r3z1dCUNO5xhQqd+SyKg5CEZ+GGZ4=</ds:DigestValue>
 </ds:Reference>
 </ds:SignedInfo>
 <ds:SignatureValue>
-TiW5EhhzbzY8HxCMgzhSBA4H7wH6GVqQyUCKjCdtpF7pYMv6R0MX4efcGV9FTux/AehBcw95Qjuq
-G0MKGF7u0HgIaHCSup2PDYFQbFJLFXl+fI6HRF71ewOMqENWBgns1tVJc2iKmWw6tXJDOBnMS8xq
-6vELTDxHEAZ8Id01H8HY/bbq/b4Xje2y56kpCh2Qq3qNj5Fjnf8//166xJn3+3643aQTAkQ+hOHb
-mURozG9vUNKS9+c/bfz05taAPryoAIDaocJd0W9Kk4EIzM/S8ExwgkyXjWGBzsN4V8ZfSUUJimbU
-dAFX5aT4vNNrLB2erYyLF1aYvFSlcanmuvJw3g==
+TWYSrwKoTi6oj6sJdnMG+XwEaOaLJUZyfSkIZ/JT7Jrx+FOy4GO1I0CmnB6XHmuE7l1rhTSyM0vf
+IySU9w6xVSsw3DImet/ESSGurSC28MbPqdbtjNWl5SG6WXcDjGw7A4T9PiG1FxdjmAdl6kXL9B28
+T3dnuQJwpKMen35C1qT0AjUglWhLKR8xfwoLxuf5vakvsXzXnDbNyyHcttdjo/x/Ob7sdcvFN8G3
+1IXAQ5jFHOY05KL1Dyzh9/SN1aNQCeYl3gKdGBDaCBhObd7ry6bQ2oB12Z6PM48wSmC9zCv5rTaS
+f9ftbFlpgkDaa7zUOGwrwOQjabnn86y05K8c6g==
 </ds:SignatureValue>
 <ds:KeyInfo>
 <ds:KeyValue>
@@ -203,6 +203,6 @@ F5RzTCfMCQQsS3PUyV4qN0iYQ0Plp1Ah
       </ds:KeyInfo>
     </md:KeyDescriptor>
     <md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</md:NameIDFormat>
-    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://pyr5g35cezm7ssowjivy7gsf540zeinf.lambda-url.ap-southeast-2.on.aws/" index="1"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://7fvbdjzdyslwu6z3fu3oglurda0vejkt.lambda-url.ap-southeast-2.on.aws/" index="1"/>
   </md:SPSSODescriptor>
 </md:EntityDescriptor>
